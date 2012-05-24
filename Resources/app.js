@@ -26,27 +26,4 @@ var tab1 = Titanium.UI.createTab({
 });
 tabGroup.addTab(tab1);
 tabGroup.open();
-/*
- rightButton.addEventListener('click', function(e) {
- var LeftButton = Titanium.UI.createButtonBar({
- labels : ['Close'],
- backgroundColor : '#669e1c',
- color : '#ffffff'
- });
- var win_seetting = Ti.UI.createWindow({
- modal : true,
- backgroundColor : '#fff',
- backgroundImage : 'images/main_1.jpg',
- navBarHidden : true,
- //url : 'lib_extend/calendar.js',
- //barImage : 'images/nav.jpg',
-
- });
- win_seetting.setLeftNavButton(LeftButton);
- LeftButton.addEventListener('click', function(e) {
- win_seetting.close();
- })
- win_seetting.open();
- })
- */
 win1.api = global_api;
