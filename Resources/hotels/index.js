@@ -2,12 +2,11 @@ var win = Ti.UI.currentWindow;
 function initMain() {
 	var data = [];
 	var row = Ti.UI.createTableViewRow();
-	for(var c = 1; c < 170000000; c++) {
+	for(var c = 1; c < 20; c++) {
 		var row = Ti.UI.createTableViewRow();
 		row.selectedBackgroundColor = '#fff';
 		row.className = 'datarow';
 		row.clickName = 'row';
-
 		var user = Ti.UI.createLabel({
 			color : '#576996',
 			font : {
@@ -53,6 +52,12 @@ function initMain() {
 		backgroundColor : 'transparent',
 		data : data
 	});
+	tableData.addEventListener('swipe', function(e) {
+		alert('swipe');
+	})
+	tableData.addEventListener('click', function(e) {
+		alert('click');
+	})
 	win.add(tableData);
 }
 
