@@ -7628,3 +7628,10 @@ CodeSign build/Debug-iphoneos/wego.app
 
 + Looking for application binary at /Users/macbookair/Documents/coding/titanium/ios/build/iphone/build/Debug-iphoneos/wego.app/wego
 + Preparing to run /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/PackageApplication
++ Finished running /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/PackageApplication
++ IPA file should be at /Users/macbookair/Documents/coding/titanium/ios/build/iphone/build/Debug-iphoneos/wego.ipa
++ Executing the command: open -b com.apple.itunes "/Users/macbookair/Documents/coding/titanium/ios/build/iphone/build/Debug-iphoneos/wego.ipa"
++ After executing the command: open -b com.apple.itunes "/Users/macbookair/Documents/coding/titanium/ios/build/iphone/build/Debug-iphoneos/wego.ipa"
++ Executing the command: osascript "/Users/macbookair/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/iphone/itunes_sync.scpt"
++ After executing the command: osascript "/Users/macbookair/Library/Application Support/Titanium/mobilesdk/osx/2.0.1.GA2/iphone/itunes_sync.scpt"
+Finishing build
