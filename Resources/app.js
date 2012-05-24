@@ -18,12 +18,6 @@ var win1 = Titanium.UI.createWindow({
 	tabBarHidden : true,
 
 });
-var rightButton = Titanium.UI.createButtonBar({
-	labels : ['Setting'],
-	backgroundColor : '#669e1c',
-	color : '#ffffff'
-});
-win1.setRightNavButton(rightButton);
 
 var tab1 = Titanium.UI.createTab({
 	icon : 'KS_nav_views.png',
