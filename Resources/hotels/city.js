@@ -1,6 +1,5 @@
 // create var for the currentWindow
-var currentWin = Ti.UI.currentWindow;
-
+var city_window = Ti.UI.currentWindow;
 function readJsServer(city) {
 	var arrayData = [];
 	var loader = Titanium.Network.createHTTPClient();
@@ -45,12 +44,12 @@ var tableview = Ti.UI.createTableView({
 })
 Ti.API.info(tableview.rowHeight)
 tableview.addEventListener('click', function(e) {
-	alert('before');
-	alert(e.row.id)
-	currentWin.close();
-	alert('after')
+	Ti.UI.currentWindow.params = e.row.id;
+	var y = e.row.id;
+	Ti.UI.currentWindow.initMain(100);
+
 })
-currentWin.add(tableview);
+city_window.add(tableview);
 readJsServer();
 
 // call the setData function to attach the database results to the array

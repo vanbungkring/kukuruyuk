@@ -1,8 +1,10 @@
 var win = Ti.UI.currentWindow;
-function initMain() {
+
+function initMain(x) {
+	alert(x);
 	var data = [];
 	var row = Ti.UI.createTableViewRow();
-	for(var c = 1; c < 20; c++) {
+	for(var c = 1; c < 5; c++) {
 		var row = Ti.UI.createTableViewRow();
 		row.selectedBackgroundColor = '#fff';
 		row.className = 'datarow';
@@ -49,14 +51,14 @@ function initMain() {
 		data.push(row);
 	}
 	var tableData = Ti.UI.createTableView({
-		backgroundColor : 'transparent',
 		data : data
 	});
-	tableData.addEventListener('swipe', function(e) {
-		alert('swipe');
-	})
 	tableData.addEventListener('click', function(e) {
-		alert('click');
+		var win_city = Ti.UI.createWindow({
+			navBarHidden : true,
+			url : 'city.js'
+		})
+		win_city.open()
 	})
 	win.add(tableData);
 }
