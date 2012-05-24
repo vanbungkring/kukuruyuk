@@ -2,7 +2,7 @@ var win = Ti.UI.currentWindow;
 function initMain() {
 	var data = [];
 	var row = Ti.UI.createTableViewRow();
-	for(var c = 1; c < 50; c++) {
+	for(var c = 1; c < 170000000; c++) {
 		var row = Ti.UI.createTableViewRow();
 		row.selectedBackgroundColor = '#fff';
 		row.className = 'datarow';
@@ -39,7 +39,7 @@ function initMain() {
 			},
 			left : 70,
 			top : 21,
-			bottom : 21,
+			bottom : 2,
 			height : 50,
 			width : 200,
 			clickName : 'comment',
